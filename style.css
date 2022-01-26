@@ -1,6 +1,9 @@
 * {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -49,14 +52,21 @@
 }
 .opening button {
     background-color: #3882F6;
-    color: white;
     padding: 7px 30px;
     border: transparent;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background-color 300ms ease-in-out;
+}
+.opening button:hover {
+    background-color: #2b62bb;
+}
+.opening button a {
+    color: white;
     font-size: 18px;
     font-weight: bold;
-}
+    text-decoration: none;
+}   
 .right img {
     width: 800px;
     height: 500px;
@@ -128,13 +138,19 @@
 }
 .container button {
     background-color: #3882F6;
-    color: white;
     padding: 7px 30px;
     border: 3px solid white;
     border-radius: 5px;
+    transition: background-color 300ms ease-in-out;
+}
+.container button:hover {
+    background-color: #2b62bb;
+}
+.container button a {
+    color: white;
     font-size: 18px;
     font-weight: bold;
-    
+    text-decoration: none;
 }
 .footer {
     background-color: #1F2937;
